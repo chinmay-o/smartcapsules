@@ -1,0 +1,104 @@
+
+
+.mainmenu-wrapper .page_nav ul.mainmenu li.lavel-1.with--drop>a::before {
+
+  display: none;
+}
+
+.object-custom-menu>li.has-mega-menu>a::after {
+
+  display: none !important;
+}
+
+.mainmenu-wrapper .page_nav ul.mainmenu {
+
+  justify-content: end !important;
+}
+
+.bk-service-area h2 {
+
+  font-family: 'louis_george_caferegular' !important;
+}
+
+.bk-number-speaks h2 {
+
+  font-family: 'louis_george_caferegular' !important;
+}
+
+.custom-pt-40 {
+
+  padding-top: 40px !important;
+}
+
+.custom-pt-0 {
+
+  padding-top: 0px !important;
+}
+
+.custom-pb-60 {
+
+  padding-bottom: 60px !important;
+}
+
+.custom-font-color {
+
+  color: #68ae4a !important;
+}
+
+.custom-color-main {
+
+  background-color: #68ae4a !important;
+}
+
+.custom-color-secondary {
+
+  background-color: #27369f !important;
+}
+
+body.template-color-23 .single-motive-speach .icon i {
+
+  color: #ffffff !important;
+}
+
+.custom-bg_image--about {
+  background-image: url(/img/custom/bg-image-11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.custom-bg_image--contact {
+  background-image: url(/img/custom/bg-image-55.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product_image--01 {
+  background-image: url(/img/custom/product01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center
+}
+
+.product_image--02 {
+  background-image: url(/img/custom/product02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center
+}
+
+.custom-text-white {
+
+  color: #fff !important;
+}
+
+.custom-text-default {
+
+  color: #68ae4a !important;
+}
+
+.custom-text-secondary {
+
+  color: #27369f !important;
+}
