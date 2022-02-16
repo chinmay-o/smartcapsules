@@ -61,28 +61,28 @@ body.template-color-23 .single-motive-speach .icon i {
 }
 
 .custom-bg_image--about {
-  background-image: url(/img/custom/bg-image-11.jpg);
+  background-image: url(../img/custom/product01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .custom-bg_image--contact {
-  background-image: url(/img/custom/bg-image-55.jpg);
+  background-image: url(../img/custom/bg-image-55.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .product_image--01 {
-  background-image: url(/img/custom/product01.jpg);
+  background-image: url(../img/custom/product01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center
 }
 
 .product_image--02 {
-  background-image: url(/img/custom/product02.jpg);
+  background-image: url(../img/custom/product02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center
