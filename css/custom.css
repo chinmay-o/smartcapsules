@@ -126,6 +126,13 @@ body.template-color-23 .single-motive-speach .icon i {
   background-position: center center
 }
 
+.bg_custom-image--37 {
+  background-image: url(../img/custom/bg-image-37.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center
+}
+
 .custom-text-white {
 
   color: #fff !important;
