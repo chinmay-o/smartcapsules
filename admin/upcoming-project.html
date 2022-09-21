@@ -1,0 +1,571 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/icon.png">
+
+    <!-- CSS
+	============================================ -->
+    <!-- Plugins -->
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/revoulation.css">
+    <link rel="stylesheet" href="../css/plugins.css"> -->
+
+    <!-- Style Css -->
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/revoulation.css">
+    <link rel="stylesheet" href="../css/plugins.min.css">
+    <link rel="stylesheet" href="../style.min.css">
+</head>
+
+<body class="template-color-23 template-font-7 CerebriSans-font">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="wrapper">
+
+        <!-- Header -->
+        <header class="br_header header-default bg_color--23 border-bottom black-logo--version haeder-fixed-width haeder-fixed-150 headroom--sticky header-mega-menu clearfix">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__wrapper mr--0">
+                            <!-- Header Left -->
+                            <div class="header-left">
+                                <div class="logo">
+                                    <a href="dashboard.html">
+                                        <img src="../img/custom/logo.png" alt="Logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Mainmenu Wrap -->
+                            <div class="mainmenu-wrapper d-none d-lg-block">
+                                <nav class="page_nav">
+                                    <ul class="mainmenu">
+
+                                      <li class="lavel-1 with--drop slide-dropdown"><a href="#"><span>Products</span></a>
+
+                                        <!-- Start Dropdown Menu -->
+                                        <ul class="dropdown__menu">
+                                          <li><a href="smart-living.html"><span>Smart Living</span></a></li>
+                                          <li><a href="smart-vehicle.html"><span>Smart Vehicles</span></a></li>
+                                          <li><a href="upcoming-project.html"><span>Upcoming Projects</span></a></li>
+                                        </ul>
+                                        <!-- End Dropdown Menu -->
+
+                                      </li>
+
+                                        <li class="lavel-1"><a href="category.html"><span>Categories</span></a></li>
+
+                                        <!-- <li class="lavel-1"><a href="blog.html"><span>Blog</span></a></li> -->
+
+                                        <li class="lavel-1"><a href="press.html"><span>Press</span></a></li>
+
+                                        <li class="lavel-1"><a href="javascript:null();"><span>Logout</span></a></li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- Header Right -->
+                            <div class="header-right d-lg-none d-xl-none">
+                                <!-- Start Hamberger -->
+                                <div class="manu-hamber popup-mobile-click d-block d-lg-none black-version d-block d-xl-none">
+                                    <div>
+                                        <i></i>
+                                    </div>
+                                </div>
+                                <!-- End Hamberger -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--// Header -->
+
+        <!-- Start Popup Menu -->
+        <div class="popup-mobile-manu popup-mobile-visiable">
+            <div class="inner">
+                <div class="mobileheader">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="../img/custom/logo.png" alt="Multipurpose">
+                        </a>
+                    </div>
+                    <a class="mobile-close" href="#"></a>
+                </div>
+                <div class="menu-content">
+                    <ul class="menulist object-custom-menu">
+
+                      <li class="lavel-1"><a href="#"><span>Smart Living</span></a></li>
+
+                      <li class="lavel-1"><a href="#"><span>Smart Vehicle</span></a></li>
+
+                      <li class="lavel-1"><a href="#"><span>Categories</span></a></li>
+
+                      <li class="lavel-1"><a href="#"><span>Logout</span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Popup Menu -->
+
+        <!-- Page Conttent -->
+        <main class="page-content">
+
+          <!-- Start My Account Area -->
+            <div class="my-account-area pt--120">
+                <div class="container-fluid container-md">
+                    <div class="row">
+                        <div class="ml-auto mr-auto col-lg-12">
+                            <div class="checkout-wrapper">
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-collapse collapse show">
+                                            <div class="panel-body">
+                                                <div class="billing-information-wrapper">
+                                                    <div class="account-info-wrapper">
+                                                        <h4>Add Upcoming Model</h4>
+                                                    </div>
+                                                    <form id="add-upcoming-form">
+                                                      <div class="row">
+                                                          <div class="col-lg-6 col-md-6">
+                                                              <div class="billing-info">
+                                                                  <label>Category</label>
+                                                                  <select id="upcomingCategory" type="text" class="form-control">
+                                                                    <option selected>Select Category</option>
+                                                                    <option>Smart Living</option>
+                                                                    <option>Smart Vehicle</option>
+                                                                  </select>
+                                                              </div>
+                                                              <div class="billing-info">
+                                                                  <label>Product Title</label>
+                                                                  <input id="upcomingTitle" type="text">
+                                                              </div>
+                                                              <div class="billing-info">
+                                                                  <label>Product Description</label>
+                                                                  <textarea id="upcomingDesciption" name="description" rows="4" cols="80"></textarea>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-lg-6 col-md-6">
+                                                            <div class="billing-info">
+                                                                <label>Title Image</label>
+                                                                <input onclick="chooseUpload()" id="upcoming-product-img" type="file" class="form-control">
+                                                            </div>
+                                                            <div>
+                                                                <img id="upcomingImage" height="240" width="600" src="http://flxtable.com/wp-content/plugins/pl-platform/engine/ui/images/image-preview.png" alt="">
+                                                            </div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="billing-back-btn">
+                                                          <div class="billing-btn">
+                                                              <button id="upcomingSubmit" type="submit" disabled>Save</button>
+                                                          </div>
+                                                      </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End My Account Area -->
+
+          <!-- Start Blog Grid Area -->
+            <div class="bk-blog-grid-area pt--70 pb--100 pt_md--80 pb_md--80 pb_sm--80 pt_sm--60 bg_color--1">
+                <div class="container">
+
+                    <div class="row" id="upcomingListing">
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Blog Grid Area -->
+
+        </main>
+        <!--// Page Conttent -->
+
+    </div>
+
+    <!--// Wrapper -->
+    <div class="yu2fvl-overlay d-none" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+
+    <!-- Modal -->
+    <div class="modal custom-model fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Upcoming</h5>
+            <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="edit-upcoming-img">
+              <div class="billing-info my-2">
+                  <label>Title Image</label>
+                  <input onclick="newUpcomingTitleImg()" id="upcoming-edit-title-img" type="file" class="form-control" required>
+              </div>
+              <div class="billing-info my-2">
+                <img id="upcomingEditedImage" style="object-fit: cover;" height="240" width="600" src="http://flxtable.com/wp-content/plugins/pl-platform/engine/ui/images/image-preview.png" alt="">
+              </div>
+              <div class="billing-back-btn my-2">
+                  <div class="billing-btn">
+                      <button class="btn btn-primary" value="submit" id="upcomingEditedSubmit" type="submit" disabled>Save</button>
+                  </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" value="delete" id="upcomingDelete" type="delete">Delete</button>
+            <button type="button" class="btn btn-secondary modal-close" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   <!-- Js Files -->
+    <!-- <script src="../js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script> -->
+
+    <!-- REVOLUTION JS FILES -->
+    <!-- <script src="../js/jquery.themepunch.tools.min.js"></script>
+    <script src="../js/jquery.themepunch.revolution.min.js"></script> -->
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <!-- <script src="../js/revolution.extension.actions.min.js"></script>
+    <script src="../js/revolution.extension.carousel.min.js"></script>
+    <script src="../js/revolution.extension.kenburn.min.js"></script>
+    <script src="../js/revolution.extension.layeranimation.min.js"></script>
+    <script src="../js/revolution.extension.migration.min.js"></script>
+    <script src="../js/revolution.extension.navigation.min.js"></script>
+    <script src="../js/revolution.extension.parallax.min.js"></script>
+    <script src="../js/revolution.extension.slideanims.min.js"></script>
+    <script src="../js/revolution.extension.video.min.js"></script> -->
+
+
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <script src="../js/vendor/vendor.min.js"></script>
+    <script src="../js/plugins.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script src="../js/revolution.tools.min.js"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
+    <script src="../js/revolution.extension.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/revoulation.js"></script>
+    <!--Google Map Active-->
+
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-storage.js"></script>
+
+    <!-- Firebase Database -->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="../js/firebase.js"></script>
+    <script src="js/authenticate.js"></script>
+    <script src="js/upcoming.js"></script>
+
+    <script>
+        // Start Map 02
+        jQuery(document).ready(function () {
+
+
+            (
+                function ($) {
+                    var gmMapDiv = $("#htmap2");
+                    if (gmMapDiv.length) {
+
+                        var gmHeight = gmMapDiv.attr("data-height");
+                        var gmWidth = gmMapDiv.attr("data-width");
+                        var gmZoomEnable = gmMapDiv.attr("data-zoom_enable");
+                        var gmZoom = gmMapDiv.attr("data-zoom");
+                        gmMapDiv.width(gmWidth).height(gmHeight);
+                        gmMapDiv.gmap3({
+                            action: "init",
+                            marker: {
+                                values: [{
+                                    address: "40.518844, -74.377268",
+                                    data: "<div class=\"gmap-marker-wrap\"><h5 class=\"gmap-marker-title\">New Jersey Office<\/h5><div class=\"gmap-marker-content\"><i class=\"fa fa-map-marker\" aria-hidden=\"true\"><\/i> 799-701 Ballantyne Rd<br \/>\nSyracuse, NY 13207<\/div><\/div>",
+                                    options: {
+                                        icon: "",
+                                        visible: false,
+                                    }
+                                }],
+                                events: {
+                                    click: function (marker, event, context) {
+                                        if (context.data == 0) {
+                                            return;
+                                        }
+                                        var map = $(this).gmap3("get");
+                                        infowindow = $(this).gmap3({
+                                            get: {
+                                                name: "infowindow"
+                                            }
+                                        });
+                                        if (infowindow) {
+                                            infowindow.open(map, marker);
+                                            infowindow.setContent(context.data);
+                                        } else {
+                                            $(this).gmap3({
+                                                infowindow: {
+                                                    anchor: marker,
+                                                    options: {
+                                                        content: context.data
+                                                    }
+                                                }
+                                            });
+                                        }
+                                    }
+                                }
+
+                            },
+                            overlay: {
+                                values: [{
+                                    address: "40.518844, -74.377268",
+                                    data: "<div class=\"gmap-marker-wrap\"><h5 class=\"gmap-marker-title\">New Jersey Office<\/h5><div class=\"gmap-marker-content\"><i class=\"fa fa-map-marker\" aria-hidden=\"true\"><\/i> 799-701 Ballantyne Rd<br \/>\nSyracuse, NY 13207<\/div><\/div>",
+                                    options: {
+                                        content: '<div><div class="animated-dot">' +
+                                            '<div class="middle-dot"></div>' +
+                                            '<div class="signal"></div>' +
+                                            '<div class="signal2"></div>' + '</div></div>',
+                                    }
+                                }],
+                                events: {
+                                    click: function (overlay, event, context) {
+                                        if (context.data == 0) {
+                                            return;
+                                        }
+                                        var map = $(this).gmap3("get");
+                                        infowindow = $(this).gmap3({
+                                            get: {
+                                                name: "infowindow"
+                                            }
+                                        });
+                                        if (infowindow) {
+                                            infowindow.open(map, overlay);
+                                            infowindow.setContent(context.data);
+                                        } else {
+                                            $(this).gmap3({
+                                                infowindow: {
+                                                    anchor: overlay,
+                                                    options: {
+                                                        content: context.data
+                                                    }
+                                                }
+                                            });
+                                        }
+                                    }
+                                }
+                            },
+                            map: {
+                                options: {
+                                    zoom: parseInt(gmZoom),
+                                    zoomControl: true,
+                                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                                    mapTypeControl: false,
+                                    scaleControl: false,
+                                    scrollwheel: gmZoomEnable == 'enable' ? true : false,
+                                    streetViewControl: false,
+                                    draggable: true,
+                                    styles: [{
+                                            "featureType": "water",
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                    "color": "#e9e9e9"
+                                                },
+                                                {
+                                                    "lightness": 17
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "landscape",
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                    "color": "#f5f5f5"
+                                                },
+                                                {
+                                                    "lightness": 20
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road.highway",
+                                            "elementType": "geometry.fill",
+                                            "stylers": [{
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 17
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road.highway",
+                                            "elementType": "geometry.stroke",
+                                            "stylers": [{
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 29
+                                                },
+                                                {
+                                                    "weight": 0.2
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road.arterial",
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 18
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road.local",
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 16
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "poi",
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                    "color": "#f5f5f5"
+                                                },
+                                                {
+                                                    "lightness": 21
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "poi.park",
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                    "color": "#dedede"
+                                                },
+                                                {
+                                                    "lightness": 21
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "elementType": "labels.text.stroke",
+                                            "stylers": [{
+                                                    "visibility": "on"
+                                                },
+                                                {
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 16
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "elementType": "labels.text.fill",
+                                            "stylers": [{
+                                                    "saturation": 36
+                                                },
+                                                {
+                                                    "color": "#333333"
+                                                },
+                                                {
+                                                    "lightness": 40
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "elementType": "labels.icon",
+                                            "stylers": [{
+                                                "visibility": "off"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "transit",
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                    "color": "#f2f2f2"
+                                                },
+                                                {
+                                                    "lightness": 19
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "administrative",
+                                            "elementType": "geometry.fill",
+                                            "stylers": [{
+                                                    "color": "#fefefe"
+                                                },
+                                                {
+                                                    "lightness": 20
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "administrative",
+                                            "elementType": "geometry.stroke",
+                                            "stylers": [{
+                                                    "color": "#fefefe"
+                                                },
+                                                {
+                                                    "lightness": 17
+                                                },
+                                                {
+                                                    "weight": 1.2
+                                                }
+                                            ]
+                                        }
+                                    ],
+
+
+                                }
+                            }
+                        });
+                    }
+                }
+            )(jQuery);
+        });
+    </script>
+
+</body>
+
+</html>

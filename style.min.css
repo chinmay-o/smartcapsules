@@ -42,7 +42,8 @@ audio:not([controls]) {
 }
 
 button, html, input, select, textarea {
-  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-family: "Montserrat", Helvetica, sans-serif
+
 }
 
 a {
@@ -251,7 +252,8 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 }
 
 button[disabled], input[disabled] {
-  cursor: default
+
+  cursor: not-allowed !important;
 }
 
 input[type=checkbox], input[type=radio] {
@@ -922,7 +924,7 @@ input, select {
 }
 
 .CerebriSans-font {
-  font-family: CerebriSans;
+  font-family: louis_george_caferegular;
   color: #777
 }
 
@@ -12402,7 +12404,7 @@ a.brook-btn.bk-btn-gray, button.brook-btn.bk-btn-gray {
   color: #222;
   text-transform: uppercase;
   font-weight: 500;
-  font-family: CerebriSans;
+  font-family: louis_george_caferegular;
   -webkit-box-shadow: none;
   box-shadow: none
 }
@@ -13097,7 +13099,7 @@ a.moredetails-btn.yellow-color-2:hover {
   line-height: 1.22;
   letter-spacing: 3px;
   font-weight: 700;
-  font-family: CerebriSans !important;
+  font-family: louis_george_caferegular !important;
   text-transform: uppercase;
   margin-bottom: 0
 }
@@ -13230,7 +13232,7 @@ a.moredetails-btn.yellow-color-2:hover {
 .group-link a {
   position: relative;
   font-size: 18px;
-  font-family: CerebriSans;
+  font-family: louis_george_caferegular;
   color: #222;
   position: relative;
   padding: 2px 0;
@@ -13291,7 +13293,7 @@ a.moredetails-btn.yellow-color-2:hover {
   font-size: 16px;
   color: #111;
   text-transform: uppercase;
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 .view-btn a::before {
@@ -15606,7 +15608,7 @@ a.moredetails-btn.yellow-color-2:hover {
   color: #fff !important;
   border-color: #9f3939 !important;
   background-color: #9f3939 !important;
-  font-family: CerebriSans !important;
+  font-family: louis_george_caferegular !important;
   font-size: 13px !important;
   font-weight: 500 !important;
   letter-spacing: 1px !important;
@@ -18105,7 +18107,7 @@ a:hover.hint--bottom::after {
   font-size: 18px;
   line-height: 34px;
   color: #fff;
-  font-family: CerebriSans;
+  font-family: louis_george_caferegular;
   max-width: 610px;
   margin: 0 auto;
   margin-bottom: 40px
@@ -22399,7 +22401,7 @@ audio {
   display: none;
   width: 300px;
   margin: 0;
-  padding: 35px 0 50px;
+  padding: 30px 0 30px;
   min-width: 300px
 }
 
@@ -24163,7 +24165,7 @@ p.bk_pra.line-height-2-22 {
 
 .single-svg-icon-box.business-icon-box .content p {
   color: #fff;
-  font-family: CerebriSans;
+  font-family: louis_george_caferegular;
   -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
   -o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
   transition: all .3s cubic-bezier(.645, .045, .355, 1)
@@ -25352,7 +25354,7 @@ body.loaded .page-loading {
 .page-loading {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
-  transition: all 1s
+  transition: all 1s;
 }
 
 .demo-option-container {
@@ -61753,7 +61755,7 @@ body.template-font-6 .service.service--2 .content p {
 }
 
 body.template-font-7 .h1, body.template-font-7 .h2, body.template-font-7 .h3, body.template-font-7 .h4, body.template-font-7 .h5, body.template-font-7 .h6, body.template-font-7 .heading, body.template-font-7 h1, body.template-font-7 h2, body.template-font-7 h3, body.template-font-7 h4, body.template-font-7 h5, body.template-font-7 h6 {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-7 .heading.font-reenie {
@@ -61761,55 +61763,55 @@ body.template-font-7 .heading.font-reenie {
 }
 
 body.template-font-7 .mini-cart .shopping-cart .shop-inner ul.product-list li .content .inner h4 {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-7 .mega__width--fullscreen .mega__list li a span {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-7 .mainmenu-wrapper .page_nav ul.mainmenu li.lavel-1>a span {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-7 .footer-widget .footer-menu ul.ft-menu-list li a {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-7 .copyright ul.bk-copyright-menu li a {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-7 .copyright .copyright-right p {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-7 .footer-widget .footer-address p {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-7 .form-style--1 .input-box input, body.template-font-7 .form-style--1 .input-box textarea {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-7 .testimonial_style--1 .content p {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-7 .testimonial_style--1 .content .testimonial-info .clint-info span {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-7 .service.service--1 .content p {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-7 .service.service--2 .content h4 {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-7 .service.service--2 .content p {
-  font-family: CerebriSans
+  font-family: louis_george_caferegular
 }
 
 body.template-font-8 .h1, body.template-font-8 .h2, body.template-font-8 .h3, body.template-font-8 .h4, body.template-font-8 .h5, body.template-font-8 .h6, body.template-font-8 .heading, body.template-font-8 h1, body.template-font-8 h2, body.template-font-8 h3, body.template-font-8 h4, body.template-font-8 h5, body.template-font-8 h6 {

@@ -3,53 +3,53 @@
 ======================*/
 
 /**************************************************************
-	
+
 	MAIN JS INDEXING
-	
-    	01. Wow Active 
+
+    	01. Wow Active
     	02. Counter Up
     	03. Mainmenu Activation
     	03. Testimonial Horizontal Activation
-    	04. Creative Portfolio    
-    	05. Flexable Image Ativation        
+    	04. Creative Portfolio
+    	05. Flexable Image Ativation
     	06. Blog Activation
         07. Youtub Popup
-    	08. Fixed Footer Area        
+    	08. Fixed Footer Area
     	09. Slick Activation
     	10. Headroom For Sticky Header
     	11. Search Popup
     	12. Sidebar Mobile Menu  Active
         13. Option Demo
-    	14. Minicart Activation        
+    	14. Minicart Activation
     	15. Sidebar Mobile Menu
     	16. Hamberger Menu
-        17. All Animation For Fade Up 
-    	18. Countdown        
+        17. All Animation For Fade Up
+    	18. Countdown
     	19. Countdown Time Circles
-    	20. Radial Progress 02 
-    	21. Draw Svg 
+    	20. Radial Progress 02
+    	21. Draw Svg
     	22. LightBox
     	23. Gallery Mesonry Activation
     	24. Image Justify Activation
         25. Portfolio Masonry Activation
-    	26. Blog Masonry Activation        
-    	27. Ajax Filter 
+    	26. Blog Masonry Activation
+    	27. Ajax Filter
     	28. Tilt Hover Animation
     	29. Portfolio Type Hover
     	30. Portfolio Type Hover 02
     	31. Portfolio Type Hover 02
         32. Digital Broadsheets
-    	33. Single Product Sticky Sidebar        
+    	33. Single Product Sticky Sidebar
         34. Price Slider Active
-        35. Preloadder 
-        36. Firefly 
-        37. Fullpage Scroll Animation 
+        35. Preloadder
+        36. Firefly
+        37. Fullpage Scroll Animation
         38. Scroll Up Activation
         39. Scroll Up COlor Change
         40. Background Marque
         41. Quantity
         42. Shipping Form Toggle
-    	43. Payment Method Select        
+    	43. Payment Method Select
     	44. Add To Cart Animation
         45. Scrollnavigation
         46. Player Js
@@ -58,7 +58,7 @@
         49. Svg Icon Draw
         50. Snowfall
         51. One Page Nav
-	
+
 	__ END MAIN JS INDEXING
 
 ***************************************************************/
@@ -70,8 +70,8 @@
 
     // Code Goes Here
 
-    /*======================= 
-    	01. Wow Active 
+    /*=======================
+    	01. Wow Active
     ======================*/
 
     new WOW().init();
@@ -105,7 +105,7 @@
     	03. Testimonial Horizontal Activation
     ====================================================*/
 
-    
+
     var swiper2 = $('.testimonial--horizontal--active');
     if (swiper2.length > 0) {
         var sliderView = 4;
@@ -174,7 +174,7 @@
     	05. Flexable Image Ativation
     ======================================*/
 
-    
+
     /*=====================================
     	05. Flexable Image Ativation
     ======================================*/
@@ -240,13 +240,13 @@
         nextArrow: '<button class="blog-arrow-next"><i class="fa fa-angle-right"></i></button>',
     });
 
-    /*=========================== 
-    	07. Youtub Popup 
+    /*===========================
+    	07. Youtub Popup
     ============================*/
 
     $('.play__btn').yu2fvl();
 
-    /*=========================== 
+    /*===========================
     	08. Fixed Footer Area
     ============================*/
 
@@ -255,7 +255,7 @@
         'margin-bottom': $fixedFooter.height() + 'px'
     });
 
-    /*=========================== 
+    /*===========================
     	09. Slick Activation
     ============================*/
 
@@ -335,7 +335,7 @@
                 $this.on('init', function(event, slick){
                     $slideCount = slick.slideCount;
                     if($slideCount <= $slidesToShow){
-                        $this.children('.slick-dots').hide();	
+                        $this.children('.slick-dots').hide();
                     }
                     if($customPaging == true){
                         var $current = '01';
@@ -397,14 +397,14 @@
 
 
 
-    /*==================================== 
+    /*====================================
     	10. Headroom For Sticky Header
     ======================================*/
 
     $('.headroom--sticky').headroom();
 
 
-    /*================================ 
+    /*================================
     	11. Search Popup
     ==================================*/
 
@@ -460,7 +460,7 @@
                 });
             }()
     });
-    
+
 
     $('.mobile-close').on('click', function (e) {
         e.preventDefault();
@@ -481,7 +481,7 @@
             }()
     });
 
-    /*================================ 
+    /*================================
     	14. Minicart Activation
     ==================================*/
 
@@ -505,7 +505,7 @@
 
 
     /* =============================
-    	15. Sidebar Mobile Menu 
+    	15. Sidebar Mobile Menu
     ================================*/
 
     $('.object-custom-menu > li.has-mega-menu > a').on('click', function (e) {
@@ -515,7 +515,7 @@
     })
 
     /* =====================
-    	16. Hamberger Menu 
+    	16. Hamberger Menu
     =========================*/
 
     $('.hamberger-trigger').on('click', function (e) {
@@ -529,7 +529,7 @@
     });
 
     /* ===================================
-    	17. All Animation For Fade Up 
+    	17. All Animation For Fade Up
     =======================================*/
 
     $(window).on('load', function () {
@@ -554,7 +554,7 @@
         allAnimationx();
     })
 
-    /*============================== 
+    /*==============================
     	18. Countdown
     ===============================*/
 
@@ -602,7 +602,7 @@
 
 
     /* ============================
-    	20. Radial Progress 02 
+    	20. Radial Progress 02
     ==============================*/
 
     $('.radial-progress').waypoint(function () {
@@ -621,7 +621,7 @@
     });
 
     /* ========================
-    	21. Draw Svg 
+    	21. Draw Svg
     ===========================*/
 
     var $svg = $('.my_svg_element').drawsvg({
@@ -784,7 +784,7 @@
     })
 
     /* ========================
-    	27. Ajax Filter 
+    	27. Ajax Filter
     ===========================*/
 
     function itemToggler() {
@@ -904,7 +904,7 @@
 
 
     /* ======================================
-    	33. Single Product Sticky Sidebar 
+    	33. Single Product Sticky Sidebar
     =========================================*/
 
     $('#is_stuck_inner').theiaStickySidebar({
@@ -929,17 +929,17 @@
         " - $" + $('#slider-range').slider('values', 1));
 
     /* ========================
-        35. Preloadder   
+        35. Preloadder
     ===========================*/
 
-    $(window).load(function () {
-        setTimeout(function () {
-            $('body').addClass('loaded');
-        }, 200);
-    })
+    // $(window).load(function () {
+    //     setTimeout(function () {
+    //         $('body').addClass('loaded');
+    //     }, 200);
+    // })
 
     /* ========================
-        36. Firefly   
+        36. Firefly
     ===========================*/
     $(window).on('load', function () {
         if ($('.firefly').length) {
@@ -955,7 +955,7 @@
     })
 
     /* =====================================
-        37. Fullpage Scroll Animation   
+        37. Fullpage Scroll Animation
     ======================================*/
     if ($('#fullpage').length) {
         $('#fullpage').fullpage({
@@ -1047,7 +1047,7 @@
     }
 
 
-    /*============================== 
+    /*==============================
         38. Scroll Up Activation
     ================================*/
     $.scrollUp({
@@ -1057,7 +1057,7 @@
         animation: 'slide'
     });
 
-    /*================================= 
+    /*=================================
         39. Scroll Up COlor Change
     ==================================*/
 
@@ -1074,7 +1074,7 @@
 
 
     /*=============================
-        40. Background Marque 
+        40. Background Marque
     =============================*/
 
     $('.background-marque').each(function () {
@@ -1120,7 +1120,7 @@
         $button.parent().find('input').val(newVal);
     });
 
-    /*=============================== 
+    /*===============================
     	42. Shipping Form Toggle
     =================================*/
 
@@ -1133,7 +1133,7 @@
     })
 
 
-    /*================================== 
+    /*==================================
     	43. Payment Method Select
     ====================================*/
     $('[name="payment-method"]').on('click', function () {
@@ -1198,7 +1198,7 @@
 
     /*===================================
         48. Scroll Reveal
-    ====================================*/  
+    ====================================*/
     ScrollReveal({
         scale: 0.85,
         duration: 1000,
@@ -1216,7 +1216,7 @@
 
     /*===================================
         48. Coustom Audio Player
-    ====================================*/ 
+    ====================================*/
     $(function() {
 
         /* Audio List Tab For Section Background */
@@ -1229,21 +1229,21 @@
         $(".audio-track-area").each(function(index, el) {
             init($(this));
         });
-    
+
         function init(card) {
             card.children(".audio-track").append('<button class="play"></button><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><path id="circle" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M50,2.9L50,2.9C76,2.9,97.1,24,97.1,50v0C97.1,76,76,97.1,50,97.1h0C24,97.1,2.9,76,2.9,50v0C2.9,24,24,2.9,50,2.9z"/></svg>');
-    
+
             var audio = card.find("audio"),
                 play = card.find('.play'),
                 circle = card.find('#circle'),
                 getCircle = circle.get(0),
                 totalLength = getCircle.getTotalLength();
-    
+
             circle.attr({
                     'stroke-dasharray': totalLength,
                     'stroke-dashoffset': totalLength
             });
-    
+
             play.on('click', function() {
                 if (audio[0].paused) {
                     $("audio").each(function(index, el) {
@@ -1257,27 +1257,27 @@
                     card.removeClass('playing');
                 }
             });
-    
+
             audio.on('timeupdate', function() {
                 var currentTime = audio[0].currentTime,
                     maxduration = audio[0].duration,
                     calc = totalLength - ( currentTime / maxduration * totalLength );
-    
+
                 circle.attr('stroke-dashoffset', calc);
             });
-    
+
             audio.on('ended', function() {
                 card.removeClass('playing');
                 circle.attr('stroke-dashoffset', totalLength);
             });
-            
+
         }
-    
+
     });
 
     /*===================================
         49. Svg Icon Draw
-    ====================================*/ 
+    ====================================*/
     var $svgIconBox = $('.single-svg-icon-box');
         $svgIconBox.each(function() {
             var $this = $(this),
@@ -1310,7 +1310,7 @@
         offsetHeight: 80,
     });
 
-    
+
 
     // Map JS
     //     var data = [{

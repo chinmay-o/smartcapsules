@@ -4,47 +4,35 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Services</title>
+    <title>Dashboard</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/icon.png">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/icon.png">
 
     <!-- CSS
 	============================================ -->
     <!-- Plugins -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/revoulation.css">
-    <link rel="stylesheet" href="css/plugins.css"> -->
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/revoulation.css">
+    <link rel="stylesheet" href="../css/plugins.css"> -->
 
     <!-- Style Css -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="../style.css"> -->
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="../css/custom.css">
 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/revoulation.css">
-    <link rel="stylesheet" href="css/plugins.min.css">
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/revoulation.css">
+    <link rel="stylesheet" href="../css/plugins.min.css">
+    <link rel="stylesheet" href="../style.min.css">
 </head>
 
 <body class="template-color-23 template-font-7 CerebriSans-font">
-
-    <!-- Start Preloader  -->
-    <div id="page-preloader" class="page-loading clearfix">
-        <div class="page-load-inner">
-            <div class="preloader-wrap">
-                <div class="wrap-2">
-                    <div class=""> <img src="img/custom/preloder.gif" alt="Brook Preloader"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Preloader  -->
 
     <!-- Wrapper -->
     <div id="wrapper" class="wrapper">
@@ -58,8 +46,8 @@
                             <!-- Header Left -->
                             <div class="header-left">
                                 <div class="logo">
-                                    <a href="index.html">
-                                        <img src="img/custom/logo.png" alt="Brook Images">
+                                    <a href="dashboard.html">
+                                        <img src="../img/custom/logo.png" alt="Logo">
                                     </a>
                                 </div>
                             </div>
@@ -68,13 +56,25 @@
                                 <nav class="page_nav">
                                     <ul class="mainmenu">
 
-                                        <li class="lavel-1 with--drop slide--megamenu"><a href="#"><span>Service</span></a></li>
+                                      <li class="lavel-1 with--drop slide-dropdown"><a href="#"><span>Products</span></a>
 
-                                        <li class="lavel-1 with--drop slide--megamenu"><a href="#"><span>Products</span></a></li>
+                                        <!-- Start Dropdown Menu -->
+                                        <ul class="dropdown__menu">
+                                          <li><a href="smart-living.html"><span>Smart Living</span></a></li>
+                                          <li><a href="smart-vehicle.html"><span>Smart Vehicles</span></a></li>
+                                          <li><a href="upcoming-project.html"><span>Upcoming Projects</span></a></li>
+                                        </ul>
+                                        <!-- End Dropdown Menu -->
 
-                                        <li class="lavel-1 with--drop slide-dropdown"><a href="#"><span>About Us</span></a></li>
+                                      </li>
 
-                                        <li class="lavel-1 with--drop slide--megamenu"><a href="#"><span>Contact Us</span></a></li>
+                                        <li class="lavel-1"><a href="category.html"><span>Categories</span></a></li>
+
+                                        <!-- <li class="lavel-1"><a href="blog.html"><span>Blog</span></a></li> -->
+
+                                        <li class="lavel-1"><a href="press.html"><span>Press</span></a></li>
+
+                                        <li class="lavel-1"><a href="javascript:null();"><span>Logout</span></a></li>
 
                                     </ul>
                                 </nav>
@@ -102,7 +102,7 @@
                 <div class="mobileheader">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="img/custom/logo.png" alt="Multipurpose">
+                            <img src="../img/custom/logo.png" alt="Multipurpose">
                         </a>
                     </div>
                     <a class="mobile-close" href="#"></a>
@@ -110,13 +110,13 @@
                 <div class="menu-content">
                     <ul class="menulist object-custom-menu">
 
-                        <li class="has-mega-menu"><a href="#"><span>Services</span></a></li>
+                      <li class="lavel-1"><a href="#"><span>Smart Living</span></a></li>
 
-                        <li class="has-mega-menu"><a href="#"><span>Products</span></a></li>
+                      <li class="lavel-1"><a href="#"><span>Smart Vehicle</span></a></li>
 
-                        <li class="has-mega-menu"><a href="#"><span>About Us</span></a></li>
+                      <li class="lavel-1"><a href="#"><span>Categories</span></a></li>
 
-                        <li class="has-mega-menu"><a href="#"><span>Contact Us</span></a></li>
+                      <li class="lavel-1"><a href="#"><span>Logout</span></a></li>
 
                     </ul>
                 </div>
@@ -124,232 +124,139 @@
         </div>
         <!-- End Popup Menu -->
 
-        <!-- Start Breadcaump Area -->
-        <div class="brook-breadcaump-area pt--130 pb--170 bg_color--1 breadcaump-title-bar">
-            <div class="container-fluid plr--150 plr_md--50 plr_sm--50">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="breadcaump-inner text-start">
-                            <h1 class="heading heading-h1 line-height-1-5">Lorem <span class="theme-color">ipsum dolor sit amet, </span><br>
-                                consectetur adipisicing <br> elit.</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Breadcaump Area -->
-
         <!-- Page Conttent -->
         <main class="page-content">
-
-            <!-- Start Service List -->
-            <div class="brook-service-list-area">
-
-                <!-- Start Single Service -->
-                <div class="bk-service-list d-block d-md-flex mb--100 align-items-center wow move-up">
-                    <div class="thumb">
-                        <img class="w--100" src="img/custom/service01.jpg" alt="service list">
-                    </div>
-                    <div class="content plr--130 plr_md--50 plr_sm--40">
-                        <h3 class="heading heading-h3">Service Type 01</h3>
-                        <div class="bkseparator--35"></div>
-                        <p class="bk_pra">Lorem ipsum dolor sit amet, consectetur
-                          adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        <a class="mt--40 bk-btn custom-color-secondary" href="#">Know More</a>
-                    </div>
-                </div>
-                <!-- End Single Service -->
-
-                <!-- Start Single Service -->
-                <div class="bk-service-list d-block d-md-flex mb--100 align-items-center wow move-up">
-                    <div class="thumb">
-                        <img class="w--100" src="img/custom/service01.jpg" alt="service list">
-                    </div>
-                    <div class="content plr--130 plr_md--50 plr_sm--40">
-                        <h3 class="heading heading-h3">Service Type 01</h3>
-                        <div class="bkseparator--35"></div>
-                        <p class="bk_pra">Lorem ipsum dolor sit amet, consectetur
-                          adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        <a class="mt--40 bk-btn custom-color-secondary" href="#">Know More</a>
-                    </div>
-                </div>
-                <!-- End Single Service -->
-
-                <!-- Start Single Service -->
-                <div class="bk-service-list d-block d-md-flex mb--100 align-items-center wow move-up">
-                    <div class="thumb">
-                        <img class="w--100" src="img/custom/service01.jpg" alt="service list">
-                    </div>
-                    <div class="content plr--130 plr_md--50 plr_sm--40">
-                        <h3 class="heading heading-h3">Service Type 01</h3>
-                        <div class="bkseparator--35"></div>
-                        <p class="bk_pra">Lorem ipsum dolor sit amet, consectetur
-                          adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        <a class="mt--40 bk-btn custom-color-secondary" href="#">Know More</a>
-                    </div>
-                </div>
-                <!-- End Single Service -->
-
-                <!-- Start Single Service -->
-                <div class="bk-service-list d-block d-md-flex mb--100 align-items-center wow move-up">
-                    <div class="thumb">
-                        <img class="w--100" src="img/custom/service01.jpg" alt="service list">
-                    </div>
-                    <div class="content plr--130 plr_md--50 plr_sm--40">
-                        <h3 class="heading heading-h3">Service Type 01</h3>
-                        <div class="bkseparator--35"></div>
-                        <p class="bk_pra">Lorem ipsum dolor sit amet, consectetur
-                          adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        <a class="mt--40 bk-btn custom-color-secondary" href="#">Know More</a>
-                    </div>
-                </div>
-                <!-- End Single Service -->
-
-            </div>
-            <!-- End Service List -->
-
-            <!-- Start Call To Action -->
-            <div class="brook-call-to-action bg_color--2 ptb--70">
+          <!-- Cart Page Start -->
+            <div class="cart_area pt--60">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-sm-6 col-12">
-                            <div class="call-content text-center text-sm-start">
-                                <h3 class="heading heading-h3 text-white wow move-up">Let's build something special for you.</h3>
+                    <div class="row">
+                      <div class="col-lg-12">
+                          <div class="breadcaump-inner text-center mb-4">
+                              <h1 class="heading heading-h4">Index Products</h1>
+                          </div>
+                      </div>
+                        <div class="col-12">
+                          <datalist id="product-List"></datalist>
+                          <form id="add-index-form">
+                            <div class="row">
+                              <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="billing-info indexProduct">
+                                    <label>Product 01</label>
+                                    <input list="product-List" name="products">
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="billing-info indexProduct">
+                                    <label>Product 02</label>
+                                    <input list="product-List" name="products">
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="billing-info indexProduct">
+                                    <label>Product 03</label>
+                                    <input list="product-List" name="products">
+                                </div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 col-12">
-                            <div class="call-btn text-center text-sm-end mt_mobile--20 wow move-up">
-                                <a class="brook-btn bk-btn-white text-theme btn-sd-size btn-rounded" href="#">Find out
-                                    more</a>
+                            <div class="panel-body">
+                              <div class="billing-back-btn">
+                                  <div class="billing-btn">
+                                      <button type="submit">Save</button>
+                                  </div>
+                              </div>
                             </div>
+                          </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- End Call To Action -->
+            <!-- Cart Page End -->
+
+          <!-- Cart Page Start -->
+            <div class="cart_area pt--60 pb--150">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-lg-12">
+                          <div class="breadcaump-inner text-center mb-4">
+                              <h1 class="heading heading-h4">Enquires</h1>
+                          </div>
+                      </div>
+                        <div class="col-12">
+                          <div class="cart-table table-responsive mb--40">
+                              <table class="table">
+                                  <thead>
+                                      <tr>
+                                          <th class="pro-price">Date</th>
+                                          <th class="pro-price">Name</th>
+                                          <th class="pro-price">Phone</th>
+                                          <th class="pro-price">Email</th>
+                                          <th class="pro-price">Message</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody id="enquiry-List"></tbody>
+                              </table>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cart Page End -->
 
         </main>
         <!--// Page Conttent -->
 
-        <!-- Footer -->
-        <footer class="page-footer bg_color--3 pl--150 pr--150 pl_lp--70 pr_lp--70 pl_lg--70 pr_lg--70 pl_md--50 pr_md--50 pl_sm--30 pr_sm--30">
-            <div class="bk-footer-inner pt--150 pb--60 pt_md--90 pt_sm--90 pb_md--30 pb_sm--20">
-                <div class="row">
-                    <div class="col-lg-5 col-xl-7 col-md-6 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/custom/logo-footer.png" alt="Logo image">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-xl-2 col-md-6 col-sm-6 col-12 mt_mobile--40">
-                        <div class="footer-widget menu--about">
-                            <h2 class="widgettitle">Links</h2>
-                            <div class="footer-menu">
-                                <ul class="ft-menu-list bk-hover">
-                                    <li><a href="#">Products</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Career</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
-                        <div class="footer-widget menu--contact">
-                            <h2 class="widgettitle">Contact</h2>
-                            <div class="footer-address bk-hover mb--20">
-                                <p>Capsules Smart Living Pvt. Limited <br> No.4/281, Kundrathur Main Road <br>
-                                  Kovur, Chennai - 600128 <br> Tamil Nadu, India, South Asia
-                                </p>
-                                <p><a href="#">info@yourdomain.com</a></p>
-                                <p><a href="#">(+91) 12345 67890</a></p>
-                            </div>
-
-                            <div class="social-share social--transparent text-white">
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Start Copyright Area -->
-            <div class="copyright ptb--50">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="copyright-left text-start">
-                            <ul class="bk-copyright-menu d-flex justify-content-center justify-content-md-start bk-hover">
-                                <li><a href="#">Developed by <span>StentorX</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="copyright-right text-center text-md-end">
-                            <p>© 2022 Capsules Smart Living. All Rights Reserved.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Copyright Area -->
-        </footer>
-        <!--// Footer -->
     </div>
-
-
-
 
     <!--// Wrapper -->
 
    <!-- Js Files -->
-    <!-- <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script> -->
+    <!-- <script src="../js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script> -->
 
     <!-- REVOLUTION JS FILES -->
-    <!-- <script src="js/jquery.themepunch.tools.min.js"></script>
-    <script src="js/jquery.themepunch.revolution.min.js"></script> -->
+    <!-- <script src="../js/jquery.themepunch.tools.min.js"></script>
+    <script src="../js/jquery.themepunch.revolution.min.js"></script> -->
 
     <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-    <!-- <script src="js/revolution.extension.actions.min.js"></script>
-    <script src="js/revolution.extension.carousel.min.js"></script>
-    <script src="js/revolution.extension.kenburn.min.js"></script>
-    <script src="js/revolution.extension.layeranimation.min.js"></script>
-    <script src="js/revolution.extension.migration.min.js"></script>
-    <script src="js/revolution.extension.navigation.min.js"></script>
-    <script src="js/revolution.extension.parallax.min.js"></script>
-    <script src="js/revolution.extension.slideanims.min.js"></script>
-    <script src="js/revolution.extension.video.min.js"></script> -->
+    <!-- <script src="../js/revolution.extension.actions.min.js"></script>
+    <script src="../js/revolution.extension.carousel.min.js"></script>
+    <script src="../js/revolution.extension.kenburn.min.js"></script>
+    <script src="../js/revolution.extension.layeranimation.min.js"></script>
+    <script src="../js/revolution.extension.migration.min.js"></script>
+    <script src="../js/revolution.extension.navigation.min.js"></script>
+    <script src="../js/revolution.extension.parallax.min.js"></script>
+    <script src="../js/revolution.extension.slideanims.min.js"></script>
+    <script src="../js/revolution.extension.video.min.js"></script> -->
 
 
 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-    <script src="js/vendor/vendor.min.js"></script>
-    <script src="js/plugins.min.js"></script>
+    <script src="../js/vendor/vendor.min.js"></script>
+    <script src="../js/plugins.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
     <!-- REVOLUTION JS FILES -->
-    <script src="js/revolution.tools.min.js"></script>
+    <script src="../js/revolution.tools.min.js"></script>
     <!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
-    <script src="js/revolution.extension.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/revoulation.js"></script>
-    <!--Google Map Active-->
-    <script src="../../../external.html?link=https://maps.googleapis.com/maps/api/js?key=AIzaSyCGM-62ap9R-huo50hJDn05j3x-mU9151Y"></script>
+    <script src="../js/revolution.extension.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/revoulation.js"></script>
+
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-storage.js"></script>
+
+    <!-- Firebase Database -->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="../js/firebase.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/authenticate.js"></script>
+    <script src="js/dashboard.js"></script>
 
     <script>
         // Start Map 02
