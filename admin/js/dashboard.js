@@ -21,6 +21,9 @@ function submitNewIndex(e) {
     index01: indexImageIDs[0],
     index02: indexImageIDs[1],
     index03: indexImageIDs[2],
+    index04: indexImageIDs[3],
+    index05: indexImageIDs[4],
+    index06: indexImageIDs[5],
   }
 
   firebase.app("categoryDatabase").database().ref('index-product-database').update(updates).then(function() {
@@ -67,7 +70,7 @@ enquiryDashRef.on("value", function(snapshot) {
         date: snapshot.val()[key].timestamp,
         name: snapshot.val()[key].name,
         email: snapshot.val()[key].email,
-        mobile: snapshot.val()[key].mobile,
+        mobile: snapshot.val()[key].number,
         message: snapshot.val()[key].message,
     });
   }
@@ -113,8 +116,8 @@ function enquiryListHTML() {
     document.getElementById('enquiry-List').innerHTML += '<tr>'+
     '<td class="pro-price"><a href="#">'+ enquiryListArray[i].date +'</a></td>'+
     '<td class="pro-price"><a href="#">'+ enquiryListArray[i].name +'</a></td>'+
-    '<td class="pro-price"><a href="#">'+ enquiryListArray[i].email +'</a></td>'+
     '<td class="pro-price"><a href="#">'+ enquiryListArray[i].mobile +'</a></td>'+
+    '<td class="pro-price"><a href="#">'+ enquiryListArray[i].email +'</a></td>'+
     '<td class="pro-price"><a href="#">'+ enquiryListArray[i].message +'</a></td>'+
     '<tr>';
   }

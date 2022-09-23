@@ -19,20 +19,20 @@ function htmlLisiting() {
   }
 
   document.getElementById('vehicle-features').innerHTML += '<div class="details-list">'+
-    '<label>Category</label>'+
-    '<span>'+
+    '<span>Category</span>'+
+    '<label>'+
     '<a href="../smart-category.html?category_id='+ vehicleListArray[0].category +'">'+
     categoryListArray.find(entry => entry.id == vehicleListArray[0].category).title.capitalize()+
     '</a>'+
-    '</span>'+
+    '</label>'+
 
     '</div>';
 
   for (var x = 0; x < vehicleFeatureArray[0].feature.length; x++) {
 
     document.getElementById('vehicle-features').innerHTML += '<div class="details-list">'+
-      '<label>'+ vehicleFeatureArray[0].feature[x].title +'</label>'+
-      '<span>'+ vehicleFeatureArray[0].feature[x].detail +'</span>'+
+      '<span>'+ vehicleFeatureArray[0].feature[x].title +'</span>'+
+      '<label>'+ vehicleFeatureArray[0].feature[x].detail +'</label>'+
     '</div>';
   }
 

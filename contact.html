@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/icon.png">
 
     <!-- CSS
@@ -46,6 +46,10 @@
     </div>
     <!-- End Preloader  -->
 
+    <a href="https://wa.me/919042877289" target="_blank" class="float">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- Wrapper -->
     <div id="wrapper" class="wrapper">
 
@@ -68,7 +72,7 @@
                               <nav class="page_nav">
                                   <ul class="mainmenu">
 
-                                      <li class="lavel-1 with--drop slide-dropdown"><a href="#"><span>Smart Living</span></a>
+                                      <li class="lavel-1 with--drop slide-dropdown"><a><span>Smart Living</span></a>
 
                                         <!-- Start Dropdown Menu -->
                                           <ul id="smart-living-list" class="dropdown__menu"></ul>
@@ -76,7 +80,7 @@
 
                                       </li>
 
-                                      <li class="lavel-1 with--drop slide-dropdown"><a href="#"><span>Smart Vehicles</span></a>
+                                      <li class="lavel-1 with--drop slide-dropdown"><a><span>Smart Vehicles</span></a>
 
                                         <!-- Start Dropdown Menu -->
                                         <ul id="smart-vehicle-list" class="dropdown__menu"></ul>
@@ -84,15 +88,14 @@
 
                                       </li>
 
-                                      <li class="lavel-1"><a href="#"><span>Travelon</span></a></li>
+                                      <li class="lavel-1"><a href="javascript:void();"><span>Travlon</span></a></li>
 
                                       <li class="lavel-1"><a href="about-us.html"><span>About</span></a></li>
 
                                       <li class="lavel-1"><a href="contact.html"><span>Contact</span></a></li>
 
                                       <li class="">
-                                        <!-- <a href="#"><span>Get a Quote</span></a> -->
-                                        <a class="bk-btn custom-color-secondary text-white" href="#">Get a Quote</a>
+                                        <a class="bk-btn custom-color-secondary text-white" href="javascript:void();" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Get a Quote</a>
                                       </li>
 
                                   </ul>
@@ -124,30 +127,30 @@
                           <img src="img/custom/logo.png" alt="Multipurpose">
                       </a>
                   </div>
-                  <a class="mobile-close" href="#"></a>
+                  <a class="mobile-close" href="javascript:void();"></a>
               </div>
               <div class="menu-content">
                   <ul class="menulist object-custom-menu">
 
-                      <li class="has-mega-menu"><a href="#"><span>Smart Living</span></a>
+                      <li class="has-mega-menu"><a><span>Smart Living</span></a>
 
                         <ul id="smart-living-list-mobile" class="object-submenu"></ul>
 
                       </li>
 
-                      <li class="has-mega-menu"><a href="#"><span>Smart Vehicles</span></a>
+                      <li class="has-mega-menu"><a><span>Smart Vehicles</span></a>
 
                         <ul id="smart-vehicle-list-mobile" class="object-submenu"></ul>
 
                       </li>
 
-                      <li class="has-mega-menu"><a href="#"><span>Travelon</span></a></li>
+                      <li><a href="javascript:void();"><span>Travlon</span></a></li>
 
-                      <li class="has-mega-menu"><a href="about-us.html"><span>About</span></a></li>
+                      <li><a href="about-us.html"><span>About</span></a></li>
 
-                      <li class="has-mega-menu"><a href="contact.html"><span>Contact</span></a></li>
+                      <li><a href="contact.html"><span>Contact</span></a></li>
 
-                      <li class="has-mega-menu"><a href="#"><span>Get a Quote</span></a></li>
+                      <li><a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Get a Quote</a></li>
 
                   </ul>
               </div>
@@ -185,9 +188,8 @@
                                         <h4 class="heading heading-h4 text-white">Visit our office at</h4>
                                         <div class="desc mt--15">
                                             <p class="bk_pra line-height-2-22 text-white">Capsules Smart Living Pvt. Limited <br>
-                                                No.4/281, Kundrathur Main Road <br>
-                                                Kovur, Chennai - 600128 <br>
-                                                Tamil Nadu, India, South Asia
+                                              325, DBS Business Centre 31A, Cathedral Garden
+                                              Road, Nungambakkam, Chennai 600034, India
                                             </p>
                                         </div>
                                     </div>
@@ -195,7 +197,12 @@
                                     <div class="classic-address text-start mt--60">
                                         <h4 class="heading heading-h4 text-white">Message us</h4>
                                         <div class="desc mt--15 mb--30">
-                                            <p class="bk_pra line-height-2-22 text-white">info@yourdomain.com <br> (+91) 12345 67890</p>
+                                            <p class="bk_pra line-height-2-22 text-white">
+                                              <a class="custom-text-default" href="mailto:smartcapsules@rediffmail.com">smartcapsules@rediffmail.com</a>
+                                            </p>
+                                            <p class="bk_pra line-height-2-22 text-white">
+                                              <a class="custom-text-default" href="tel:+919042877289">(+91) 9042 877 289</a>
+                                            </p>
                                         </div>
                                         <div class="social-share social--transparent text-white">
                                             <a href="#"><i class="fab fa-facebook"></i></a>
@@ -210,33 +217,33 @@
                         </div>
                         <div class="col-lg-6 col-12 pl--50">
                             <div class="contact-form">
-                                <form id="contact-form">
+                                <form id="enquiry-form">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <input name="con_name" type="text" placeholder="Name *">
+                                            <input id="enquiryName" name="con_name" type="text" placeholder="Name *" required>
                                         </div>
 
                                         <div class="col-lg-12 mt--30">
-                                            <input name="con_email" type="text" placeholder="Email *">
+                                            <input id="enquiryEmail" name="con_email" type="text" placeholder="Email *" required>
                                         </div>
 
                                         <div class="col-lg-12 mt--30">
-                                            <input type="text" name="con_phone" placeholder="Phone number">
+                                            <input id="enquiryNumber" type="text" name="con_phone" placeholder="Phone number*" required>
                                         </div>
 
                                         <div class="col-lg-12 mt--30">
-                                            <textarea name="con_message" placeholder="Your message"></textarea>
+                                            <textarea id="enquiryMessage" name="con_message" placeholder="Your message"></textarea>
                                         </div>
 
                                         <div class="col-12 mt--30">
                                             <div class="check-box">
                                                 <label for="check">The details shared our stored in full confidentiality.</label>
+                                                <p class="form-messege"></p>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-12 mt--30">
-                                            <input type="submit" value="Send message">
-                                            <p class="form-messege"></p>
+                                            <input class="custom-color-secondary" type="submit" value="Submit">
                                         </div>
                                     </div>
                                 </form>
@@ -269,11 +276,11 @@
                             <h2 class="widgettitle">Links</h2>
                             <div class="footer-menu">
                                 <ul class="ft-menu-list bk-hover">
-                                    <li><a href="#">Products</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Career</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                  <li><a href="javascript:void();">Travlon</a></li>
+                                  <li><a href="about-us.html">About Us</a></li>
+                                  <li><a href="javascript:void();">Careers</a></li>
+                                  <li><a href="contact.html">Contact</a></li>
+                                  <li class="d-none"><a id="brochureDownload" href="../assets/brochure/Capsules-E-Brochure.pdf" download>Download Brochure</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -282,11 +289,12 @@
                         <div class="footer-widget menu--contact">
                             <h2 class="widgettitle">Contact</h2>
                             <div class="footer-address bk-hover mb--20">
-                                <p>Capsules Smart Living Pvt. Limited <br> No.4/281, Kundrathur Main Road <br>
-                                  Kovur, Chennai - 600128 <br> Tamil Nadu, India, South Asia
+                                <p>Capsules Smart Living Pvt. Limited <br>
+                                  325, DBS Business Centre 31A, Cathedral Garden
+                                  Road, Nungambakkam, Chennai 600034, India
                                 </p>
-                                <p><a href="#">info@yourdomain.com</a></p>
-                                <p><a href="#">(+91) 12345 67890</a></p>
+                                <p><a href="mailto:smartcapsules@rediffmail.com">smartcapsules@rediffmail.com</a></p>
+                                <p><a href="tel:+919042877289">(+91) 9042 877 289</a></p>
                             </div>
 
                             <div class="social-share social--transparent text-white">
@@ -305,7 +313,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="copyright-left text-start">
                             <ul class="bk-copyright-menu d-flex justify-content-center justify-content-md-start bk-hover">
-                                <li><a href="#">Developed by <span>StentorX</span></a></li>
+                                <li><a href="https://stentorx.com" target="_blank">Developed by <span>StentorX</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -321,35 +329,64 @@
         <!--// Footer -->
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade custom-model" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Get a Quote</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="quote-form" class="form-style--1 wow move-up">
+                <div class="row">
 
+                    <div class="col-lg-12">
+                        <div class="input-box">
+                            <span class="form-icon far fa-user"></span>
+                            <input id="enquiryNameQ" type="text" placeholder="Name *" required>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-12">
+                        <div class="input-box">
+                            <span class="form-icon far fa-envelope"></span>
+                            <input id="enquiryEmailQ" type="text" placeholder="Email *" required>
+                        </div>
+                    </div>
 
-    <!--// Wrapper -->
+                    <div class="col-lg-12">
+                        <div class="input-box">
+                            <span class="form-icon fas fa-mobile-alt"></span>
+                            <input id="enquiryNumberQ" type="text" placeholder="Phone number*" required>
+                        </div>
+                    </div>
 
-   <!-- Js Files -->
-    <!-- <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script> -->
+                    <div class="col-lg-12">
+                        <div class="input-box">
+                            <span class="form-icon fas fa-car-alt"></span>
+                            <input id="enquiryModelQ" type="text" placeholder="Vehicle Type*" required>
+                        </div>
+                    </div>
 
-    <!-- REVOLUTION JS FILES -->
-    <!-- <script src="js/jquery.themepunch.tools.min.js"></script>
-    <script src="js/jquery.themepunch.revolution.min.js"></script> -->
+                    <div class="col-lg-12">
+                        <div class="form-action">
+                            <div class="form-description">
+                                The details shared are stored in full confidentiality.
+                                <p class="form-messege"></p>
+                            </div>
+                            <div class="form-submit">
+                                <input class="custom-color-secondary" type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-    <!-- <script src="js/revolution.extension.actions.min.js"></script>
-    <script src="js/revolution.extension.carousel.min.js"></script>
-    <script src="js/revolution.extension.kenburn.min.js"></script>
-    <script src="js/revolution.extension.layeranimation.min.js"></script>
-    <script src="js/revolution.extension.migration.min.js"></script>
-    <script src="js/revolution.extension.navigation.min.js"></script>
-    <script src="js/revolution.extension.parallax.min.js"></script>
-    <script src="js/revolution.extension.slideanims.min.js"></script>
-    <script src="js/revolution.extension.video.min.js"></script> -->
-
-
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
     <script src="js/vendor/vendor.min.js"></script>
@@ -360,6 +397,7 @@
     <script src="js/revolution.extension.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/revoulation.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
 
     <!-- Firebase CDN -->
     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
@@ -371,6 +409,7 @@
     <script src="js/firebase.js"></script>
     <script src="js/firebase/links.js"></script>
     <script src="js/preloader.js"></script>
+    <script src="js/firebase/enquiry.js"></script>
 
     <script>
         // Start Map 02

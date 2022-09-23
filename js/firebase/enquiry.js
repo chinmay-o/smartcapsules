@@ -29,6 +29,20 @@ function submitDownloadEnquiry(e) {
   saveEnquiry(name, email, number, message);
 }
 
+document.getElementById('quote-form').addEventListener('submit', submitQuoteEnquiry);
+
+function submitQuoteEnquiry(e) {
+
+  e.preventDefault();
+
+  var name = getInput('enquiryNameQ');
+  var email = getInput('enquiryEmailQ');
+  var number = getInput('enquiryNumberQ');
+  var message = getInput('enquiryModelQ');
+
+  saveEnquiry(name, email, number, message);
+}
+
 function saveEnquiry(name, email, number, message) {
 
   var enquiryData = enquiryRef.child(uuidv4());
@@ -44,14 +58,19 @@ function saveEnquiry(name, email, number, message) {
 
       console.log('Synchronization succeeded');
       $('#enquiry-form')[0].reset();
+      $('#quote-form')[0].reset();
+      $('#enquiry-download-form')[0].reset();
+      $(".form-message").text("Form submitted successfully.")
       if (message == 'Catalogue Download') {
 
-        console.log("Brochure Download");
+        var link = document.getElementById("brochureDownload");
+        link.click();
       }
 
     })
     .catch(function(error) {
 
       console.log('Synchronization failed');
+      $(".form-message").text("Form submission failed, try again.")
     });
 }

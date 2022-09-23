@@ -13,17 +13,17 @@
     	04. Creative Portfolio
     	05. Flexable Image Ativation
     	06. Blog Activation
-        07. Youtub Popup
+      07. Youtub Popup
     	08. Fixed Footer Area
     	09. Slick Activation
     	10. Headroom For Sticky Header
     	11. Search Popup
     	12. Sidebar Mobile Menu  Active
-        13. Option Demo
+      13. Option Demo
     	14. Minicart Activation
     	15. Sidebar Mobile Menu
     	16. Hamberger Menu
-        17. All Animation For Fade Up
+      17. All Animation For Fade Up
     	18. Countdown
     	19. Countdown Time Circles
     	20. Radial Progress 02
@@ -31,14 +31,14 @@
     	22. LightBox
     	23. Gallery Mesonry Activation
     	24. Image Justify Activation
-        25. Portfolio Masonry Activation
+      25. Portfolio Masonry Activation
     	26. Blog Masonry Activation
     	27. Ajax Filter
     	28. Tilt Hover Animation
     	29. Portfolio Type Hover
     	30. Portfolio Type Hover 02
     	31. Portfolio Type Hover 02
-        32. Digital Broadsheets
+      32. Digital Broadsheets
     	33. Single Product Sticky Sidebar
         34. Price Slider Active
         35. Preloadder

@@ -20,20 +20,20 @@ function htmlLisiting() {
   }
 
   document.getElementById('living-features').innerHTML += '<div class="details-list">'+
-    '<label>Category</label>'+
-    '<span>'+
+    '<span>Category</span>'+
+    '<label>'+
     '<a href="../smart-category.html?category_id='+ livingListArray[0].category +'">'+
     categoryListArray.find(entry => entry.id == livingListArray[0].category).title.capitalize()+
     '</a>'+
-    '</span>'+
+    '</label>'+
 
     '</div>';
 
   for (var x = 0; x < livingFeatureArray[0].feature.length; x++) {
 
     document.getElementById('living-features').innerHTML += '<div class="details-list">'+
-      '<label>'+ livingFeatureArray[0].feature[x].title +'</label>'+
-      '<span>'+ livingFeatureArray[0].feature[x].detail +'</span>'+
+      '<span>'+ livingFeatureArray[0].feature[x].title +'</span>'+
+      '<label>'+ livingFeatureArray[0].feature[x].detail +'</label>'+
     '</div>';
   }
 

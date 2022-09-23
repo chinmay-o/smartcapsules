@@ -161,7 +161,7 @@ function indexGallery() {
   }
   for (var j = 0; j < galleryImageArray.length; j++) {
 
-    for (var x = 1; x < galleryImageArray[j].images.length; x++) {
+    for (var x = 1; x < 5; x++) {
       document.getElementById('option-area0' + j).innerHTML += '<div class="col-6">'+
         '<div class="custom-carousal-option" style="background-image: url(\''+ galleryImageArray[j].images[x] +'\')"></div>'+
       '</div>';

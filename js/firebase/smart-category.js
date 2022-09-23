@@ -28,9 +28,9 @@ function htmlListing(categoryData) {
         '<img src="'+ vehicleImageArray.find(entry => entry.key == vehicleListArray[i].key).images[0] +'" alt="Portfolio Images">' +
         '</div>' +
         '<div class="left-end-title">' +
-        '<h3 class="post-overlay-title">' +
+        '<h4 class="post-overlay-title mt-2">' +
         vehicleListArray[i].title.capitalize() +
-        '</h3>' +
+        '</h4>' +
         '</div>' +
         '</div>' +
         '</a>'+
@@ -47,7 +47,7 @@ function htmlListing(categoryData) {
         '<img src="'+ livingImageArray.find(entry => entry.key == livingListArray[i].key).images[0] +'" alt="Portfolio Images">' +
         '</div>' +
         '<div class="left-end-title">' +
-        '<h3 class="post-overlay-title">' +
+        '<h3 class="post-overlay-title mt-2">' +
         livingListArray[i].title.capitalize() +
         '</h3>' +
         '</div>' +
