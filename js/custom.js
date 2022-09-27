@@ -17,3 +17,8 @@ function swapSlideGallery() {
 //   console.log("in");
 //   $(".yu2fvl-overlay").css("display", "block");
 // })
+
+setTimeout(function () {
+
+  $(".yu2fvl-iframe").attr("src", "https://www.youtube.com/embed/pVnjx25VO08");
+}, 2000)
