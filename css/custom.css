@@ -175,6 +175,13 @@ body.template-color-23 .single-motive-speach .icon i {
   background-position: center center;
 }
 
+.custom-bg_image--investor {
+  background-image: url(../img/custom/invest-in-capsules-smart-living.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 .product_image--01 {
   background-image: url(../img/custom/product01.jpg);
   background-repeat: no-repeat;

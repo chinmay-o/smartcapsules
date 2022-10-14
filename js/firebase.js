@@ -64,6 +64,4 @@ function getInput(id) {
   return document.getElementById(id).value.toLowerCase();
 }
 
-
-
 // $(".edit-category-buttton").removeClass("d-none")

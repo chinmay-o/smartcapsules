@@ -67,7 +67,7 @@ enquiryDashRef.on("value", function(snapshot) {
     enquiryListArray.push({
 
         key: key,
-        date: snapshot.val()[key].timestamp,
+        date: moment(snapshot.val()[key].timestamp, 'DD-MM-YYYY h:mm:ss a'),
         name: snapshot.val()[key].name,
         email: snapshot.val()[key].email,
         mobile: snapshot.val()[key].number,
@@ -75,7 +75,8 @@ enquiryDashRef.on("value", function(snapshot) {
     });
   }
   enquiryArrayLoad = true;
-  enquiryListArray.reverse();
+  // enquiryListArray.reverse();
+  sortByDate(enquiryListArray);
 
 }, function(error) {
   console.log("Error: " + error.code);
@@ -114,11 +115,11 @@ function enquiryListHTML() {
   for (var i = 0; i < enquiryListArray.length; i++) {
 
     document.getElementById('enquiry-List').innerHTML += '<tr>'+
-    '<td class="pro-price"><a href="#">'+ enquiryListArray[i].date +'</a></td>'+
-    '<td class="pro-price"><a href="#">'+ enquiryListArray[i].name +'</a></td>'+
+    '<td class="pro-price"><a href="#">'+ enquiryListArray[i].date._i +'</a></td>'+
+    '<td class="pro-price"><a href="javascript:void()">'+ enquiryListArray[i].name.capitalize() +'</a></td>'+
     '<td class="pro-price"><a href="#">'+ enquiryListArray[i].mobile +'</a></td>'+
     '<td class="pro-price"><a href="#">'+ enquiryListArray[i].email +'</a></td>'+
-    '<td class="pro-price"><a href="#">'+ enquiryListArray[i].message +'</a></td>'+
+    '<td class="pro-price"><a href="#">'+ enquiryListArray[i].message.capitalize() +'</a></td>'+
     '<tr>';
   }
 }
@@ -134,4 +135,13 @@ function productsShowcase () {
     enquiryListHTML();
     clearInterval(productLoad);
   }
+}
+
+function sortByDate(arr) {
+
+  arr.sort(function(a, b) {
+    return Number(Number(new Date(b.date) - new Date(a.date)));
+  });
+
+  return arr;
 }
