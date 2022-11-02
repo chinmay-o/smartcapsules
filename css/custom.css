@@ -251,8 +251,9 @@ body.template-color-23 .single-motive-speach .icon i {
 
 .vehicle-title-img img {
 
-  min-height: 500px;
-  max-height: 500px;
+  min-height: 500px !important;
+  max-height: 500px !important;
+  object-fit: contain !important;
 }
 
 .post-thumb a img {
