@@ -249,7 +249,14 @@ body.template-color-23 .single-motive-speach .icon i {
   overflow: none !important;
 }
 
-.vehicle-title-img img {
+#vehicle-title-img img {
+
+  min-height: 500px !important;
+  max-height: 500px !important;
+  object-fit: contain !important;
+}
+
+#living-title-img img {
 
   min-height: 500px !important;
   max-height: 500px !important;
