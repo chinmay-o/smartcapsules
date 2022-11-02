@@ -14,7 +14,7 @@ function submitUpcomingForm(e) {
   var title = getInput('upcomingTitle');
   var description = getInput('upcomingDesciption');
 
-  saveUpcoming(category, title, description);
+  saveUpcoming(title, category, description);
 }
 
 function saveUpcoming(title, category, description) {

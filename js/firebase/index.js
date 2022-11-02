@@ -5,6 +5,8 @@ let vehicleImageRef = firebase.app("vehicleDatabase").database().ref('vehicle-im
 
 let livingImageRef = firebase.app("livingDatabase").database().ref('living-image-database');
 
+let upcomingRef = firebase.app("livingDatabase").database().ref('upcoming-database');
+
 var arrayIndexLoad = false;
 var indexImageArray = [];
 indexImageRef.on("value", function(snapshot) {
@@ -111,6 +113,28 @@ livingImageRef.on("value", function(snapshot) {
   console.log("Error: " + error.code);
 });
 
+var upcomingArrayLoad = false;
+var upcomingListArray = [];
+upcomingRef.on("value", function(snapshot) {
+
+  upcomingListArray = [];
+  for (let key in snapshot.val()) {
+
+    upcomingListArray.push({
+
+        key: key,
+        title: snapshot.val()[key].title,
+        description: snapshot.val()[key].description,
+        image: snapshot.val()[key].upcomingImageURL,
+    })
+  }
+  upcomingArrayLoad = true;
+
+}, function(error) {
+
+  console.log("Error: " + error.code);
+});
+
 function indexListing() {
 
   for (var x = 0; x < vehicleListArray.length; x++) {
@@ -170,6 +194,14 @@ function indexGallery() {
   swapSlideGallery();
 }
 
+function upcomingListing() {
+
+  for (var i = 0; i < upcomingListArray.length; i++) {
+
+    console.log(upcomingListArray[i]);
+  }
+}
+
 var indexLoad = setInterval(indexShowcase, 100);
 
 function indexShowcase () {
@@ -178,6 +210,7 @@ function indexShowcase () {
 
     indexListing();
     indexGallery();
+    upcomingListing();
     clearInterval(indexLoad);
   }
 }

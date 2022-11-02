@@ -249,6 +249,12 @@ body.template-color-23 .single-motive-speach .icon i {
   overflow: none !important;
 }
 
+.vehicle-title-img img {
+
+  min-height: 500px;
+  max-height: 500px;
+}
+
 .post-thumb a img {
 
   width: 100% !important;
