@@ -101,7 +101,7 @@ function vehicleDataListHTML() {
 
   for (var i = 0; i < indexImageArray.length; i++) {
 
-    $(".indexProduct input")[i].value = vehicleListArray.find(entry => entry.key == indexImageArray[i]).title.capitalize();
+    $(".indexProduct input")[i].value = vehicleListArray.find(entry => entry.key == indexImageArray[i]).key;
   }
 
   for (var i = 0; i < vehicleListArray.length; i++) {
