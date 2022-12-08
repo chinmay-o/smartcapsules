@@ -162,7 +162,7 @@ function indexListing() {
   setTimeout(function() {
 
     $('body').addClass('loaded');
-  }, 200);
+  }, 500);
 }
 
 function indexGallery() {
